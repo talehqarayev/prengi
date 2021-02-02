@@ -1,0 +1,56 @@
+.solution
+    height: 800px
+    background: url("../img/bg2-min.png") center (center / cover) no-repeat
+    padding: 70px 0 75px 0
+    &_top
+    &_subheader
+        color: white
+        font-size: 30px
+        text-align: center
+        font-weight: 700
+    &_menu
+        list-style-type: none
+        margin-top: 25px
+        padding: 0
+        display: flex
+        justify-content: space-around
+        align-items: center
+        border: 1px solid white
+        border-radius: 5px
+        height: 75px
+    &_item
+        color: white
+        position: relative
+        &::after
+           content: ""
+           position: absolute
+           width: 2px
+           height: 25px
+           background-color: grey
+           right: -40px
+    &_item:nth-child(6)::after
+        content: none       
+    //     border-right: 2px solid grey
+    //     padding-right: 30px
+    //     padding-top: 10px
+    //     padding-bottom: 10px
+    //     font-weight: 500
+    // &_item:nth-child(6)
+    //     border: none
+    //     padding-right: 0
+    a
+        color: white
+        font-size: 14px
+        &:hover
+            color: $hover-color
+
+    .solution_bottom
+        margin-top: 30px
+    .slider
+        &_item
+            margin: 0 auto
+            width: 770px
+            // height: 540px
+            img
+                max-width: 770px
+                max-height: 540px

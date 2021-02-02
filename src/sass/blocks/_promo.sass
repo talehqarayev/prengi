@@ -1,0 +1,31 @@
+.promo
+    height: 700px
+    background: url("../img/bg-min.png") center (center / cover) no-repeat
+    padding-top: 35px
+    position: relative
+    nav
+        display: flex
+        justify-content: space-between
+        position: relative
+        .logo
+            width: 145px
+            height: 65px
+            img
+                max-width: 145px
+                max-height: 65px
+        .menu
+            // list-style: none
+            padding-left: 0
+            margin-bottom: 0
+            display: flex
+            width: 55%
+            justify-content: space-between
+            align-items: center
+            &_item
+                color: white
+                text-transform: uppercase
+                font-size: 13px
+                a
+                    color: white
+                    &:hover
+                        color: $hover-color
